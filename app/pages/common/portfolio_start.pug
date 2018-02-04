@@ -1,0 +1,163 @@
+// ============== Portfolio start ================
+.swiper-slide.slide-bg(style='background:url(images/bg/5s.jpg)')
+	.container
+		// page title
+		.page-title
+			.content
+				h2
+					| My 
+					span Portfolio
+				.clearfix
+				p
+					| I create websites, mobile apps, graphic design and etc. as if they’re "freshly baked ideas". I’ll help you with function, usability, design and testing. And since I'm nerd, everything’ll be fully responsive and developed using the latest techniques.
+				.clearfix
+				.color-separator
+				.clearfix
+			.overlay
+		// portfolio filters
+		section#folio.gray-bg
+			#options
+				ul#filters.option-set(data-option-key='filter')
+					li.filter.actcat.transition(data-filter='all') All
+					li.filter.transition(data-filter='category_1') Web 
+					li.filter.transition(data-filter='category_2') App
+					li.filter.transition(data-filter='category_3') Graphics
+					li.filter.transition(data-filter='category_4') Video
+			// ajax  Page Holder
+			#project-page-holder
+				.clearfix
+				#project-page-data
+				.clearfix
+				#project-page-button.clearfix
+					a#project_close.transition(href='#')
+						i.fa.fa-times
+			.clearfix
+			// portfolio links
+			.content
+				.row-fluid
+					.span12
+						#folio_container
+							// 9 project ajax page slider
+							.box.grid-2.notvisible.open-project-link.mix.category_1.mix_all
+								a.open-project(href='projects/interdezign-ajax.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/interdezign.jpg', alt='Interdezign', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 InterDezign
+							// 8 project ajax page slider
+							.box.grid-2.notvisible.open-project-link.mix.category_1.mix_all
+								a.open-project(href='projects/speedyvenues-ajax.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/speedyvenues.jpg', alt='Speedyvenues', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Speedyvenues
+							// 7 project ajax page gallery
+							.box.grid-2.notvisible.open-project-link.mix.category_1.mix_all
+								a.open-project(href='projects/bathright-ajax.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/bathright.jpg', alt='Bathright', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Bathright
+							// 6 project ajax page iframe
+							.box.grid-2.notvisible.open-project-link.mix.category_1.mix_all
+								a.open-project(href='projects/ibbankers-ajax.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/ibbankers.jpg', alt='ibbankers.com', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 IBBankers
+							// 5 project youtube  video
+							.box.grid-2.notvisible.mix.category_4.mix_all
+								a.popup-youtube(href='https://www.youtube.com/watch?v=hcYorhEJqe4')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/craneglee_vid01.jpg', alt='craneglee', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Craneglee Promo Video
+							// 4 project vimeo video
+							.box.grid-2.notvisible.mix.category_4.mix_all
+								a.popup-vimeo(href='https://vimeo.com/240515978')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/craneglee_vid02.jpg', alt='craneglee', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Craneglee video
+							// 3 project ajax modal
+							.box.grid-2.notvisible.mix.category_3.mix_all
+								a.popup-with-move-anim(href='projects/aztecalogo.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/aztecalogo.jpg', alt='aztecalogo', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Azteca Lighting
+							// 2 project gallery
+							.box.grid-2.notvisible.mix.category_2.mix_all
+								a.popup-gallery(href='images/folio/cinema_app01.jpg')
+								a.popup-gallery(href='images/folio/cinema_app02.jpg')
+								a.popup-gallery(href='images/folio/cinema_app03.jpg')
+								a.popup-gallery(href='images/folio/cinema_app04.jpg')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/cinema_app.jpg', alt='Cinema application', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Cinema Cafe
+							// 1 project gallery
+							.box.grid-2.notvisible.mix.category_3.mix_all
+								a.popup-with-move-anim(href='projects/redround.html')
+									.folio-img-holder
+										img.respimg.transition(src='images/folio/thumbs/redround.jpg', alt='redround', title='')
+										.folio-item
+											.folio-overlay
+											span.fol-but View
+								.box-details
+									h3 Red Round
+		// section subscribe
+		section#subscribe
+			.overlay
+			.bg.bg-parallax(style='background:url(images/bg/subscribe_bg.jpg)')
+			.content
+				.subscribe-holder
+					h3 Subscribe
+					.row-fluid
+						.span4
+							h4 Sign Up
+							p
+								| Please sign up for my email list, where we will send you up to date news and promotions.
+						.span8
+							.subcribe-form
+								fieldset
+									form.subscriptionForm(method='post')
+										input#subscriptionForm.inputForm(type='text', value='Enter Your Email Address', onfocus="if (this.value=='Enter Your Email Address') this.value=''", onblur="if (this.value==''){this.value='Enter Your Email Address'}")
+										input#submitButton.transition(type='submit', value='Send')
+									#success Thanks for your subscription
+									#error Please enter a valid email address
+		// section order
+		section#order.gray-bg
+			.content
+				h3 LET'S TALK
+				p
+					| Let me know what you're looking for and I'll be in touch as soon as possible.
+				.clearfix
+				a.button.go-contact.content-button.transition.hide-icon(href='#')
+					i.fa.fa-angle-right.transition2
+					span.text.transition.color-bg Order
+// portfolio  end

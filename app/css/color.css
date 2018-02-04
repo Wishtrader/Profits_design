@@ -1,0 +1,41 @@
+.button, nav a span, .arrow-nav a, .home-separator span, .about-button, .custom-skillbar, .services-holder li:hover, .serv-overlay {
+  background: #3498DB; }
+
+#options li.actcat, #options li:hover {
+  background: #3498DB; }
+
+.folio-overlay span, .popup-modal-dismiss, #contact-form input[type="submit"], #jprePercentage, .scroll-btn:after, .color-separator, .twitter-holder .customNavigation a, .testimonials-holder .customNavigation a, .clients-holder, .subscriptionForm input#submitButton, .contact-tooltip, .scroll-nav a, .about-image .customNavigation a, .box-details h3:after, .social-list li a:before, #project-page-button a, .tagcloud a, .pagination a, .media-holder .customNavigation a, ::-webkit-scrollbar-thumb, -moz-scrollbar {
+  background: #3498DB; }
+
+.services-holder li i, .contact-info li i {
+  color: #3498DB; }
+
+.policy-box a, .policy-box i {
+  color: #3498DB; }
+
+.error_message, .twitts li a, .num, .resume-head h4, #testimonials-slider a, .twitter-holder h4 a, .subscribe-holder h4 {
+  color: #3498DB; }
+
+#contact-form input[type=text]:focus, #contact-form textarea:focus {
+  color: #3498DB; }
+
+input[type=email]:focus, #contact-social ul li a:hover, .side-site div i, #success_page p {
+  color: #3498DB; }
+
+.post-meta li h6, .post-meta li a {
+  color: #3498DB; }
+
+.search-submit, .share-options ul li a:hover {
+  color: #3498DB; }
+
+.page-title h2 span {
+  border-bottom: 4px solid #3498DB; }
+
+#project-slider .owl-next {
+  background: #3498DB url(../images/sr.png) no-repeat center; }
+
+#project-slider .owl-prev {
+  background: #3498DB url(../images/sl.png) no-repeat center; }
+
+.contact-tooltip:after {
+  border-top-color: #3498DB; }

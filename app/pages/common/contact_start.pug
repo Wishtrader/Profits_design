@@ -1,0 +1,63 @@
+// ============== Contact start ================
+.swiper-slide.slide-bg(style='background:url(images/bg/6s.jpg)')
+	.container
+		// page title
+		.page-title
+			.content
+				h2
+					| My  
+					span Contacts
+				.clearfix
+				p
+					| Ready to start a project or really curious about our process? Drop me a note or give me a call +375 29 232 22 52. I'm happy to answer all your questions.
+				.clearfix
+				.color-separator
+				.clearfix
+			.overlay
+		// section contact top
+		section#contact
+			.contact-header
+				h3 GET IN TOUCH
+			.left-colum
+				// contact form
+				#contact-form
+					#message
+					form#contactform(method='post', action='php/contact.php', name='contactform')
+						input#name(name='name', type='text', clas='inputForm2', onclick='this.select()', value='Name')
+						input#email(name='email', type='text', onclick='this.select()', value='E-mail')
+						textarea#comments(name='comments', onclick='this.select()') Message
+						input#submit.send_message.transition(type='submit', value='Send Message')
+			.right-colum
+				// map
+				#mapbox
+					#map_canvas
+			// contact info
+			.contact-info.gray-bg
+				ul
+					li
+						i.fa.fa-phone
+						a.transition(href='#') +375(29)232 22 52
+						span.contact-tooltip My Phone
+					li
+						i.fa.fa-envelope-o
+						a.transition(href='#') mr.akomarov@icloud.com
+						span.contact-tooltip My email
+					li
+						i.fa.fa-home
+						a.transition(href='#') Gomel, Belarus
+						span.contact-tooltip My location
+		// section contact social
+		section#contact-social
+			.overlay
+			.bg.bg-parallax(style='background:url(images/bg/6s.jpg)')
+			.content
+				ul
+					li
+						a.transition(href='https://www.facebook.com/profitsby', target='_blank') facebook
+					li
+						a.transition(href='https://twitter.com/mrAkomarov', target='_blank') twitter
+					li
+						a.transition(href='https://www.instagram.com/akomaroff', target='_blank') Instagram
+					li
+						a.transition(href='https://www.linkedin.com/in/andrei-kamarou-a35407116', target='_blank') Linkedin
+// contact  end

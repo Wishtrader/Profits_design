@@ -1,0 +1,127 @@
+doctype html
+html(lang='en')
+  head
+    // =============== basic  ===============
+    meta(charset='UTF-8')
+    title PROFITS - WEB DESIGN STUDIO
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(name='robots', content='index, follow')
+    meta(name='keywords', content='web design, design, create site, app design')
+    meta(name='description', content='')
+    // =============== css  ===============
+    link(rel='stylesheet', type='text/css', href='css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='css/reset.css')
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.css', media='all')
+    link(rel='stylesheet', type='text/css', href='css/owl.carousel.css', media='screen')
+    link(rel='stylesheet', type='text/css', href='css/idangerous.swiper.css')
+    link(rel='stylesheet', type='text/css', href='css/magnific-popup.css', media='all')
+    link(rel='stylesheet', type='text/css', href='css/styles.css')
+    link(rel='stylesheet', type='text/css', href='css/color.css')
+    // =============== favicons ===============
+    link(rel='shortcut icon', href='images/favi.ico')
+    // =============== fonts ===============
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:100,300,600,800', rel='stylesheet', type='text/css')
+    // =============== google map ===============
+    script(type='text/javascript', src='http://maps.google.com/maps/api/js?key=AIzaSyCfnrZTzIa_cfH3xcUz_YVvQt4Y-hppSWo')
+    // Yandex.Metrika counter
+    script(type='text/javascript').
+      (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+      try {
+      w.yaCounter35770270 = new Ya.Metrika({
+      id:35770270,
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true
+      });
+      } catch(e) { }
+      });
+      var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
+      if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/35770270', style='position:absolute; left:-9999px;', alt='')
+    // /Yandex.Metrika counter
+  
+  body(onload='initialize()')
+    // ================= main start ================
+    .change-lang
+      .flag.active
+        img(src='images/ru.png', alt='Русский язык')
+      .flag
+        img(src='images/us.png', alt='English language')
+    #main
+      .nav-holder
+        // logo
+        .logo-holder
+          img(src='images/logo.png', alt='Logo Kamarou')
+        // nav button
+        .btn-menu-wrapper.elem.call-menu.transition2
+          #btn-menu
+            span.icon-container
+              span.line.line01
+              span.line.line02
+              span.line.line03
+              span.line.line04
+        // template navigation
+        nav.vis
+          a.active.swp(href='#')
+            span.transition
+            | Home
+          a.swp(href='#')
+            span.transition
+            | About
+          a.swp(href='#')
+            span.transition
+            | Portfolio
+          a.swp(href='#')
+            span.transition
+            | Contact
+          a(href='blog.html')
+            span.transition
+            | Blog
+        .arrow-nav
+          a.arrow-right.transition2(href='#')
+            i.fa.fa-angle-right
+          a.arrow-left.transition2(href='#')
+            i.fa.fa-angle-left
+      // about slide navigation
+      .scroll-nav
+        a(href='#about')
+          i.fa.fa-smile-o
+          span About
+        a(href='#facts')
+          i.fa.fa-trophy
+          span Facts
+        a(href='#twitteritem')
+          i.fa.fa-twitter
+          span Twitter
+        a(href='#resume')
+          i.fa.fa-briefcase
+          span Resume
+        a(href='#testimonials')
+          i.fa.fa-comments-o
+          span Testomonials
+      // start content
+      .swiper-container
+        .swiper-wrapper
+          include common/home_start.pug
+          include common/about_start.pug
+          include common/portfolio_start.pug
+          include common/contact_start.pug
+          
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/jpreloader.min.js')
+    script(type='text/javascript', src='js/plugins.js')
+    script(type='text/javascript', src='js/superslides.js')
+    script(type='text/javascript', src='js/scripts.js')
+    script(type='text/javascript', src='js/initslideshow.js')

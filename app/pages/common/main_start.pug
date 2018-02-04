@@ -1,0 +1,54 @@
+// ================= main start ================
+#main
+  .nav-holder
+    // logo
+    .logo-holder
+      img(src='images/logo.png', alt='Logo Kamarou')
+    // nav button
+    .btn-menu-wrapper.elem.call-menu.transition2
+      #btn-menu
+        span.icon-container
+          span.line.line01
+          span.line.line02
+          span.line.line03
+          span.line.line04
+    // template navigation
+    nav.vis
+      a.active.swp(href='#')
+        span.transition
+        | Home
+      a.swp(href='#')
+        span.transition
+        | About
+      a.swp(href='#')
+        span.transition
+        | Portfolio
+      a.swp(href='#')
+        span.transition
+        | Contact
+      a(href='blog.html')
+        span.transition
+        | Blog
+    .arrow-nav
+      a.arrow-right.transition2(href='#')
+        i.fa.fa-angle-right
+      a.arrow-left.transition2(href='#')
+        i.fa.fa-angle-left
+  // about slide navigation
+  .scroll-nav
+    a(href='#about')
+      i.fa.fa-smile-o
+      span About
+    a(href='#facts')
+      i.fa.fa-trophy
+      span Facts
+    a(href='#twitteritem')
+      i.fa.fa-twitter
+      span Twitter
+    a(href='#resume')
+      i.fa.fa-briefcase
+      span Resume
+    a(href='#testimonials')
+      i.fa.fa-comments-o
+      span Testomonials
+  
